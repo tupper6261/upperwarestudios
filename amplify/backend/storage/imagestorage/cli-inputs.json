@@ -1,0 +1,16 @@
+{
+  "resourceName": "imagestorage",
+  "policyUUID": "ab27cec3",
+  "bucketName": "upperwarestudiosimages",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

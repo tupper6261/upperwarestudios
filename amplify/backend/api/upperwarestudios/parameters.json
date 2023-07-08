@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "upperwarestudios",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
