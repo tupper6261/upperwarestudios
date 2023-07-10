@@ -1,15 +1,17 @@
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import UpperwareLandingPage from './UpperwareLandingPage';
-import SkylabLandingPage from './SkylabLandingPage';
+import SkylabLandingPage from './skylab/SkylabLandingPage';
 
 function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path="/" component={UpperwareLandingPage} />
-        <Route exact path="/skylab" component={SkylabLandingPage} />
+      <Router>
+        <Routes>
+        <Route exact path="/" element={UpperwareLandingPage} />
+        <Route exact path="/skylab" element={SkylabLandingPage} />
         {/* Add more routes for other pages */}
-      </Switch>
+        </Routes>
+    </Router>
     </div>
   );
 }
