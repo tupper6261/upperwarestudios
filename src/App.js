@@ -7,8 +7,8 @@ function App() {
     <div>
       <Router>
         <Routes>
-        <Route exact path="/" element={UpperwareLandingPage} />
-        <Route exact path="/skylab" element={SkylabLandingPage} />
+        <Route exact path="/" element={<UpperwareLandingPage />} />
+        <Route exact path="/skylab" element={<SkylabLandingPage />} />
         {/* Add more routes for other pages */}
         </Routes>
     </Router>
