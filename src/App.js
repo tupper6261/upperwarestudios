@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Routes>
         <Route path="/" element={<UpperwareLandingPage />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/resume" push to={"/resume.html"} />
         <Route path="/skylab" element={<SkylabLandingPage />} />
         <Route path="/skylab/meetups" element={<Meetups />} />
         <Route path="/skylab/*" element={<SkylabLandingPage />} />
