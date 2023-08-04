@@ -4,22 +4,20 @@ import axios from 'axios';
 /* https://h4yyk3ufkjvozw7dflymxogm540drxqp.lambda-url.us-east-2.on.aws/ */
 
 function Meetups() {
-  // State to hold the meetup data
   const [meetupData, setMeetupData] = useState([]);
 
-  // Function to fetch meetup data from the Lambda endpoint
   const fetchMeetupData = async () => {
     try {
       const response = await axios.get(
         'https://h4yyk3ufkjvozw7dflymxogm540drxqp.lambda-url.us-east-2.on.aws/'
       );
+      console.log('Fetched meetup data:', response.data); // Log the fetched data
       setMeetupData(response.data);
     } catch (error) {
       console.error('Error fetching meetup data:', error);
     }
   };
 
-  // Fetch the data when the component mounts
   useEffect(() => {
     fetchMeetupData();
   }, []);
